@@ -1,0 +1,33 @@
+.star-field {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction with stars */
+  }
+  
+  .star {
+    position: absolute;
+    width: 1px; /* Star width */
+    height: 1px; /* Star height */
+    background-color: #ffffff; /* Star color (white) */
+    border-radius: 50%; /* Rounded shape for star effect */
+    animation: twinkling 3s infinite; /* Twinkling animation */
+  }
+  
+  .colored-star {
+    background-color: #ffffff; /* Default color for colored stars */
+  }
+  
+  /* Keyframes for twinkling */
+  @keyframes twinkling {
+    0% {
+      opacity: 0; /* Initial opacity at 0 */
+    }
+    50% {
+      opacity: 1; /* Halfway with full opacity */
+    }
+    100% {
+      opacity: 0; /* Ends with 0 opacity */
+    }
+  }
+  
