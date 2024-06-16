@@ -484,7 +484,7 @@ nav ul li a:hover {
   justify-content: center;
   padding: 20px;
   background: linear-gradient(to bottom, rgb(136, 253, 236), transparent);
-  color: rgb(0, 27, 25);
+  color: rgb(255, 255, 255);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
