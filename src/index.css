@@ -325,14 +325,23 @@ nav ul li a:hover {
   font-weight: 200;
   font-style: normal;
   font-size: 18px;
+  
+}
 
-
+.about-me-text p{
+  background: rgba(95, 94, 94, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.06); padding: 25px;
+  width: 480px;
 }
 
 .about-me-image {
   flex: 1;
-  margin-left: 50px;
   text-align: center;
+
 
 }
 
@@ -361,8 +370,7 @@ nav ul li a:hover {
 
 
 .about-me-image img {
-  max-width: 100%;
-  border-radius: 50%;
+  max-width: 500px;
 }
 
 
@@ -483,7 +491,7 @@ nav ul li a:hover {
   align-items: flex-end;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(to bottom, rgb(136, 253, 236), transparent);
+  background: linear-gradient(to bottom, rgb(2, 73, 67), transparent),url();
   color: rgb(255, 255, 255);
   opacity: 0;
   transform: translateY(20px);
@@ -729,9 +737,9 @@ nav ul li a:hover {
 
 
 /*topic line */
-
+/**
 .line {
-  width: 500px;
+  width: 30px;
   height: 3px;
   background: #03f5f5;
   position: relative;
@@ -747,12 +755,12 @@ nav ul li a:hover {
 
 @keyframes line_l_animation {
   0% {
-    left: calc(2% + 60%);
+    left: calc(2% + 50%);
     width: 0px;
   }
 
   35% {
-    left: calc(2% + 45%);
+    left: calc(2% + 30%);
     width: 100px;
   }
 
@@ -766,7 +774,7 @@ nav ul li a:hover {
     width: 0px;
   }
 }
-
+**/
 /**footer */
 footer {
   background-color: #0000005d;
