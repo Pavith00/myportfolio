@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 body {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Electrolize", monospace;
+  font-weight: auto;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,8 +33,8 @@ code {
 /* Styling header */
 header {
   background-color: transparent;
-  color: #fff;
-  padding: 15px;
+  color: #fff !important;
+  padding: 1% !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,8 +53,8 @@ header {
 
 header h1 {
   margin: 0;
-  color: #1ed0d6;
-  font-size: 30px;
+  color: #1ed0d6 !important;
+  font-size: 5%;
 }
 
 nav ul {
@@ -74,34 +76,37 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #2debeb;
+  color: #2debeb !important;
 }
 
 /*Hero section*/
+/* Hero section */
 .hero {
-  background-color: transparent;
-  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.103);
+  padding: 5% 0;
   text-align: center;
-  overflow: hidden;
   height: 100vh;
   position: relative;
-  display: grid;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .hero-content {
-  max-width: 800px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 350px;
+  height: auto;
   z-index: 1;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .hero-text .fade-line {
@@ -115,13 +120,11 @@ nav ul li a:hover {
   transform: translateX(0);
 }
 
-
-
 .hero-image {
   opacity: 0;
   transform: translateX(60px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  max-width: 50%;
+  width: 100%;
 }
 
 .hero-image.fade-in {
@@ -130,51 +133,46 @@ nav ul li a:hover {
 }
 
 .hero-image img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
-
 .hero-content h1 {
-
-  margin-bottom: 20px;
+  font-family: "Bungee Outline", sans-serif;
+  margin-bottom: 3%;
   position: relative;
   color: #f9f9f9;
   z-index: 1;
   text-align: left;
-  padding-top: 15%;
   font-weight: 300;
 }
 
 .hero-content h1 .small {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 90%;
+  margin-bottom: 20%;
   position: relative;
   color: #f9f9f9;
   z-index: 1;
   text-align: left;
-  padding-top: 15%;
   font-weight: 400;
 }
 
 .hero-content .big {
-  font-size: 50px;
+  font-size: 150%;
   font-weight: 800;
 }
 
 .hero-content p {
-  font-size: 25px;
+  font-size: 150%;
   color: #ffffff;
   font-weight: 500;
   z-index: 2;
   text-shadow: 2px 2px 5px rgba(73, 77, 134, 0.5);
   text-align: left;
   font-weight: 200;
-
 }
 
 .hero-content .glow-hero-text {
-
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   position: relative;
   background: linear-gradient(to right, rgb(6, 100, 163), rgb(3, 250, 250));
   -webkit-background-clip: text;
@@ -185,80 +183,87 @@ nav ul li a:hover {
 
 .bg-image {
   position: absolute;
-  max-width: 40px;
-  max-width: 40px;
+  max-width: 2%;
   pointer-events: none;
   transition: transform 3s ease, filter 0.3s ease-in-out;
   z-index: -1;
-
 }
 
 .glow-image {
   display: inline-block;
-  /* Required for positioning */
   filter: drop-shadow(0 0 10px rgb(73, 119, 121));
-  /* Initial glow */
   transition: filter 0.3s ease-in-out;
-  
   opacity: 0.3;
 }
 
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+}
+
+.bg-image:nth-child(1) {
+  top: 0%;
+  left: 10%;
+}
+
+.bg-image:nth-child(2) {
+  top: 35%;
+  left: 75%;
+}
+
 .bg-image:nth-child(3) {
-  top: -5%;
-  left: -6%;
+  top: 20%;
+  left: 20%;
 }
 
 .bg-image:nth-child(4) {
-  top: 30%;
-  left: 70%;
+  top: 0%;
+  left: 80%;
 }
 
 .bg-image:nth-child(5) {
-  top: 100%;
-  left: 90%;
+  top: 5%;
+  left: 40%;
 }
 
 .bg-image:nth-child(6) {
   top: 60%;
-  left: 60%;
+  left: 0%;
 }
 
 .bg-image:nth-child(7) {
-  top: 0%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
 }
 
 .bg-image:nth-child(8) {
-  top: 30%;
-  left: -25%;
+  top: 60%;
+  left: 70%;
 }
 
 .bg-image:nth-child(9) {
-  top: 90%;
-  left: 3%;
-}
-
-.bg-image:nth-child(10) {
-  top: -10%;
-  left: 109%;
-}
-
-.bg-image:nth-child(11) {
   top: 40%;
   left: 115%;
 }
 
-.bg-image:nth-child(12) {
+.bg-image:nth-child(10) {
   top: 90%;
   left: 3%;
 }
 
-.bg-image:nth-child(13) {
+.bg-image:nth-child(11) {
   top: -3%;
   left: 90%;
 }
 
-.bg-image:nth-child(14) {
+.bg-image:nth-child(12) {
   top: 40%;
   left: 15%;
 }
@@ -293,72 +298,74 @@ nav ul li a:hover {
 /* about */
 
 .about-me {
-  padding: 100px;
+
+  padding: 10% 5%;
   background-color: rgba(0, 0, 0, 0.103);
   text-align: center;
   color: #ffffff;
   height: 100hv;
-  max-width: 100hv;
+  width: 100hv;
 
 }
 
 .about-me-content {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 200;
-
+  overflow: hidden;
 
 }
 
 .about-me h1 {
-  font-size: 40px;
+  font-size: 250%;
+  font-family: "Bungee Outline", sans-serif;
 }
 
 .about-me-text {
   flex: 1;
   text-align: left;
-  padding-right: 150px;
-  font-family: "Tajawal", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  
+  font-size: 120%;
+
 }
 
-.about-me-text p{
-  background: rgba(95, 94, 94, 0.14);
+.about-me-text p {
+  background: linear-gradient(#011818e7, #010f0e) padding-box,
+    linear-gradient(145deg, transparent 35%, #1c46ff, #40c9ff) border-box;
+  border: 2px solid transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgba(255, 255, 255, 0.06); padding: 25px;
-  width: 480px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 4%;
+  width: 100%;
+  margin: 0% 5% ;
 }
 
 .about-me-image {
   flex: 1;
-  text-align: center;
-
-
+  text-align: right;
+  overflow: hidden;
 }
+
 
 /* Initial state for fade animations */
 .fade-left,
 .fade-right {
   opacity: 0;
-  transition: opacity 1s, transform 1s;
+  transition: opacity 5s, transform 3s;
 }
 
 /* Fade-in effect for left-to-right */
 .fade-left {
-  transform: translateX(-20px);
+  transform: translateX(-50px);
 }
 
 .fade-right {
-  transform: translateX(20px);
+  transform: translateX(200px);
 }
 
 /* When element is in view */
@@ -370,9 +377,23 @@ nav ul li a:hover {
 
 
 .about-me-image img {
-  max-width: 500px;
+  max-width: 100%;
 }
 
+/* Custom CSS for responsive typography */
+@media (max-width: 600px) {
+  .about-me-text p {
+    font-size: 0.9em; /* Adjust as needed */
+  }
+
+  .about-me-text h2 {
+    font-size: 1.2em; /* Adjust as needed */
+  }
+
+  .about-me h1 {
+    font-size: 1.5em; /* Adjust as needed */
+  }
+}
 
 /*topics*/
 
@@ -411,18 +432,21 @@ nav ul li a:hover {
 /* project */
 
 .projects {
-  padding: 100px 20px;
+  padding: 10% 2% 2%;
   text-align: center;
   justify-content: center;
   align-items: center;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.103);
 
+
 }
 
-.section-title {
-  margin-bottom: 50px;
-  font-size: 40px;
+.projects .section-title {
+  margin-bottom: 5%;
+  font-size: 270%;
+  font-family: "Bungee Outline", sans-serif;
+
 
 }
 
@@ -432,8 +456,10 @@ nav ul li a:hover {
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
 
 
 }
@@ -446,33 +472,42 @@ nav ul li a:hover {
   border-radius: 25px;
   background-color: #0f0f0f41;
   max-width: 100%;
-  padding: 20px 150px;
   border-radius: 15px;
-  padding: 20px;
+  padding: 3%;
 
 }
 
 .project-content {
   flex: 1;
-  /* Ensures equal width for each content section */
-  margin: 25px;
-  /* Adds space around each image container */
+  margin: 3%;
+  width: calc(50% - 15px);
+  padding:1%;
+  background: linear-gradient(#011818e7, #010f0e) padding-box,
+    linear-gradient(145deg, transparent 35%, #37ffff, #303eff) border-box;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
 }
 
+.project-content .title{
+  text-align: left;
+  padding: 0% 5%;
 
-
+}
 
 .project .hover-image-container {
   position: relative;
-  width: 550px;
-  height: 300px;
+  width: 100%;
+  height: 5%;
   overflow: hidden;
 }
 
 
 .project .image {
   width: 100%;
-  height: 100%;
+  height: 5%;
   display: block;
   transition: filter 0.5s ease;
   border-radius: 10px;
@@ -481,6 +516,7 @@ nav ul li a:hover {
 
 .project .overlay {
   position: absolute;
+  font-optical-sizing: auto;
   width: 100%;
   height: 100%;
   top: 0;
@@ -490,9 +526,10 @@ nav ul li a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 20px;
-  background: linear-gradient(to bottom, rgb(2, 73, 67), transparent),url();
-  color: rgb(255, 255, 255);
+  padding: 3%;
+  background: linear-gradient(to bottom, rgb(81, 255, 243), transparent), url();
+  color: rgb(2, 37, 35);
+  font-weight: 500;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
@@ -501,7 +538,7 @@ nav ul li a:hover {
 
 .project .hover-image-container:hover .image {
   filter: blur(6px);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .project .hover-image-container:hover .overlay {
@@ -509,9 +546,10 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
+
 .project .text {
   position: absolute;
-  padding: 50px 20px;
+  padding: 10% 2%;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -519,15 +557,16 @@ nav ul li a:hover {
   /* Adjust the font size as needed */
 }
 
-.project .tools img{
-  height: 30px;
-  max-width: 50%;
+.project .tools img {
+  height: 30%;
+  width: 30%;
 
 }
+
 .project .tools {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 3%;
 
 }
 
@@ -537,62 +576,81 @@ nav ul li a:hover {
 
 
 .contact-details li {
-  padding: 10px;
-  font-size: 90px;
+  padding: 2%;
+  font-size: 6vw;
 }
 
-
-
 .contact {
-  padding: 10px 10px;
+  padding: 10% 2% 5% 2%;
   text-align: center;
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.103);
 }
 
 .contact h1 {
-  padding: 50px;
-  font-size: 40px;
+
+  font-size: 270%;
+  font-family: "Bungee Outline", sans-serif;
 }
 
 .contact-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 30%;
 }
 
 
 .contact-details {
 
-  padding: 30px;
+  padding: 2%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 100hv;
+
+}
+
+.contact .list-unstyled {
+  width: 90%;
+  height: 100%;
+
 }
 
 
 .contact-details h2 {
   font-size: 1.8em;
-  margin-bottom: 15px;
+  margin-bottom: 3%;
   color: #c7c7c7;
 }
 
-.container {
+.contact .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 6%;
+  padding: 4% 0% 8% 0%;
   height: 50%;
   vertical-align: center;
   align-items: center;
+
 }
 
-.container ul li {
-  width: 150px;
+
+.contact .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* Adjust the gap between icons */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.contact .container ul li {
+  width: 15%;
   text-align: center;
   vertical-align: middle;
-  height: 150px;
   display: inline-block;
   text-decoration: none;
   text-decoration: none;
@@ -601,6 +659,7 @@ nav ul li a:hover {
   box-shadow: 10px -10px 20px #0a0a0a,
     -10px 10px 20px #020202;
   margin: 15px;
+
 }
 
 .container ul li:hover {
@@ -629,36 +688,48 @@ nav ul li a:hover {
   /* Set the color to inherit from the parent */
 }
 
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .contact-details li {
+    font-size: 7vw;
+    /* Adjust font-size for smaller screens */
+  }
+
+  .contact .container ul {
+    gap: 10px;
+    /* Adjust gap between icons for smaller screens */
+  }
+}
+
 /* skills*/
 
 .skills {
   color: #ffffff;
   height: 100vh;
-  max-height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  perspective: 1000px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 2%;
   background-color: rgba(0, 0, 0, 0.103);
 
 }
+
 .skills {
   color: #ffffff;
-  height: 90vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  perspective: 1000px;
+
 }
 
 .skills h1 {
-  margin-bottom: 30px;
-  font-size: 40px;
-  padding: 50px;
+  margin: 3% 0% 5%;
+  font-size: 250%;
+  padding: 3%;
+  font-family: "Bungee Outline", sans-serif;
 }
 
 .skill-icons {
@@ -668,20 +739,20 @@ nav ul li a:hover {
 }
 
 .skill-container {
-  margin: 0 20px;
+  margin: 0 2%;
   position: relative;
 }
 
 .skill {
   background-color: #1ab9b110;
   border-radius: 25%;
-  padding: 20px;
-  width: 120px;
-  height: 120px;
+  padding: 2%;
+  width: 10%;
+  height: 10%;
   position: relative;
   overflow: hidden;
   transition: transform 0.5s ease;
-  margin: 15px;
+  margin: 2%;
 }
 
 .skill.shine::before {
@@ -696,12 +767,14 @@ nav ul li a:hover {
 }
 
 @keyframes shine {
-  0%, 100% {
-      margin-top: -100px;
+
+  0%,
+  100% {
+    margin-top: -100px;
   }
 
   50% {
-      margin-top: 800px;
+    margin-top: 800px;
   }
 }
 
@@ -711,9 +784,9 @@ nav ul li a:hover {
 }
 
 .skill img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
+  width: 90%;
+  height: 90%;
+  margin-bottom: 10%;
 }
 
 .skill-list {
@@ -723,7 +796,7 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   background-color: #fff;
-  padding: 10px;
+  padding: 2%;
 }
 
 .skill-list ul {
@@ -791,4 +864,72 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  .hero-content,
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-image,
+  .about-me-text,
+  .about-me-image {
+    max-width: 100%;
+  }
+}
+
+.project-section {
+  display: flex;
+  justify-content: space-between;
+  /* Ensures two columns on larger screens */
+  margin-bottom: 30px;
+}
+
+.project-content {
+  width: calc(50% - 15px);
+  /* Adjusted width for two columns */
+  margin-bottom: 15px;
+  /* Optional: Adjust vertical spacing */
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    flex-direction: column;
+    /* Stacks projects vertically on smaller screens */
+  }
+
+  .project-content {
+    width: 100%;
+    /* Full width for projects on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Decrease font size for mobile devices */
+  }
+}
+
+/* If you need to adjust specific text elements */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em; /* Adjust heading sizes */
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  p {
+    font-size: 0.9em;
+  }
+
+  /* Adjust other elements as needed */
+  .project .overlay,
+  .project .text {
+    font-size: 0.8em;
+  }
 }

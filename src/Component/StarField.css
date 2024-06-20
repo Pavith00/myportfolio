@@ -7,8 +7,8 @@
   
   .star {
     position: absolute;
-    width: 1px; /* Star width */
-    height: 1px; /* Star height */
+    width: 1.2px; /* Star width */
+    height: 1.2px; /* Star height */
     background-color: #ffffff; /* Star color (white) */
     border-radius: 50%; /* Rounded shape for star effect */
     animation: twinkling 3s infinite; /* Twinkling animation */

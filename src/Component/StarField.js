@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './StarField.css';
 
-const numStars = 100; // Number of stars
+const numStars = 150; // Number of stars
 const totalAnimationDuration = 5; // Total animation duration in seconds
 
 const StarField = () => {
