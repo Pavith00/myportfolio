@@ -961,7 +961,7 @@ footer p {
 
   .hero-content .glow-hero-text {
 
-    background: linear-gradient(to right, rgb(97, 244, 255), rgb(143, 255, 249));
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 255, 234));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
