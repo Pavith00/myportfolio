@@ -960,9 +960,9 @@ footer p {
   }
 
   .hero-content .glow-hero-text {
+    
+      -webkit-text-fill-color: rgb(62, 255, 229); /* This makes the text color white on mobile */
+      background: none; /* Remove background gradient */
 
-    background: none; /* Remove the background gradient */
-    -webkit-background-clip: initial; /* Reset the background clip */
-    color: rgb(88, 255, 233); /* Set the text color to white */
-  }
+      }
 }
