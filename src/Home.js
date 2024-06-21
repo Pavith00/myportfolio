@@ -204,15 +204,16 @@ function Home() {
                     <div className="container">
                         <div className="row align-items-center hero-content">
                             <div className="col-lg-6 col-md-12 hero-text" ref={heromain}>
+                                <p className="small fade-line">Hello, It's Me</p>
                                 <h1>
-                                    <di><span className="small fade-line">I'm </span></di>
                                     <div>
-
                                         <span className="fade-line big">Pavithra </span>
                                         <span className="big fade-line glow-hero-text">Ramanayake</span>
                                     </div>
                                 </h1>
+                                <br />
                                 <p className="fade-line">I'm a Computer Science Undergraduate.</p>
+
 
                             </div>
                             <div className="col-lg-6 col-md-12 hero-image" ref={heroImageRef}>
@@ -237,7 +238,15 @@ function Home() {
                                 <br />
                                 <p className="shine">
                                     I am an undergraduate at the University of Kelaniya, pursuing a BSc Honours degree in Computer Science. My academic background and projects have equipped me with a strong understanding of data structures, algorithms, software development, and machine learning. I have hands-on experience with technologies like JavaScript, React.js, Node.js, and MongoDB. I am seeking an internship to apply my skills and gain practical experience in a dynamic work environment. I am passionate about solving complex problems and creating innovative solutions, always eager to learn and grow.
+                                    <center className='resume'>
+                                        <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download>
+                                            <button className="button">
+                                                <span className="button-content">Get Resume</span>
+                                            </button>
+                                        </a>
+                                    </center>
                                 </p>
+
                             </div>
                             <div className="col-md-6 about-me-image fade-right">
                                 <img src={aboutImage} alt="Profile Picture" className="img-fluid" />
@@ -327,7 +336,7 @@ function Home() {
                                                 <div className="text">
                                                     <h2>Brightcleen Cleaning Services Website</h2>
                                                     <p>
-                                                    This website is a group effort created for a fictional cleaning service company called Brightcleen. As beginners in web development, we aimed to keep the project simple yet effective, focusing on learning and implementing fundamental HTML, CSS, and JavaScript concepts.
+                                                        This website is a group effort created for a fictional cleaning service company called Brightcleen. As beginners in web development, we aimed to keep the project simple yet effective, focusing on learning and implementing fundamental HTML, CSS, and JavaScript concepts.
                                                     </p>
 
                                                 </div>
@@ -388,7 +397,7 @@ function Home() {
                                                 <div className="text">
                                                     <h2>Courier-Management-System</h2>
                                                     <p>
-                                                    This Courier Management System project aims to streamline and optimize courier operations by providing a digital platform(Desktop application) for managing shipments, tracking packages, and handling bills. The development and implementation of our courier service application in Visual Studio represents a significant step forward in streamlining and enhancing the efficiency of our courier service operations.                                                    </p>
+                                                        This Courier Management System project aims to streamline and optimize courier operations by providing a digital platform(Desktop application) for managing shipments, tracking packages, and handling bills. The development and implementation of our courier service application in Visual Studio represents a significant step forward in streamlining and enhancing the efficiency of our courier service operations.                                                    </p>
 
                                                 </div>
                                             </div>
@@ -416,15 +425,15 @@ function Home() {
                                                 <div className="text">
                                                     <h2>Sinhala character recognition system</h2>
                                                     <p>
-                                                    This project is to create a Sinhala character recognition system using Convolutional Neural Networks (CNN).                                                    </p>
+                                                        This project is to create a Sinhala character recognition system using Convolutional Neural Networks (CNN).                                                    </p>
 
                                                 </div>
                                             </div>
                                         </div>
                                         <p className='title'>Deep Learning</p>
                                         <div className="tools">
-                                        <img src="https://skillicons.dev/icons?i=py,tensorflow,bootfstrap,mondgodb" alt="Tools" />
-                                        <a href="https://github.com/Pavith00/Sinhala-character-recognition-system.git" target="_blank" rel="noopener noreferrer">
+                                            <img src="https://skillicons.dev/icons?i=py,tensorflow,bootfstrap,mondgodb" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/Sinhala-character-recognition-system.git" target="_blank" rel="noopener noreferrer">
                                                 <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
                                             </a>
                                         </div>
@@ -446,8 +455,7 @@ function Home() {
                                                 <div className="text">
                                                     <h2>Stock price prediction system</h2>
                                                     <p>
-                                                        Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
-                                                    </p>
+                                                    Predict stock prices using LSTM Recurrent Neural Networks.                                                    </p>
 
                                                 </div>
                                             </div>
@@ -475,7 +483,7 @@ function Home() {
                                                 <div className="text">
                                                     <h2>2D Game</h2>
                                                     <p>
-                                                    Strawberry Quest is a simple 2D platformer game created using the Godot game engine. The objective of the game is for the player to navigate through the level, collect strawberries to increase their score, and reach the trophy to complete the level. I made this project to learn how to use GDScript in Godot for making 2D platform games.  </p>
+                                                        Strawberry Quest is a simple 2D platformer game created using the Godot game engine. The objective of the game is for the player to navigate through the level, collect strawberries to increase their score, and reach the trophy to complete the level. I made this project to learn how to use GDScript in Godot for making 2D platform games.  </p>
 
                                                 </div>
                                             </div>

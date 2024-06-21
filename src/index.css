@@ -3,10 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   margin: 0;
-  font-family: "Electrolize", monospace;
+  font-family: "Kanit", sans-serif;
   font-weight: auto;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -83,7 +86,7 @@ nav ul li a:hover {
 /* Hero section */
 .hero {
   background-color: rgba(0, 0, 0, 0.103);
-  padding: 5% 0;
+  padding: 20% 0%;
   text-align: center;
   height: 100vh;
   position: relative;
@@ -94,6 +97,7 @@ nav ul li a:hover {
 
 .hero-content {
   width: 100%;
+  height: 100vh;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -137,23 +141,25 @@ nav ul li a:hover {
 }
 
 .hero-content h1 {
-  font-family: "Bungee Outline", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 3%;
   position: relative;
   color: #f9f9f9;
   z-index: 1;
   text-align: left;
   font-weight: 300;
+  font-size: 300%;
+
 }
 
-.hero-content h1 .small {
-  font-size: 90%;
-  margin-bottom: 20%;
+.hero-content .small {
+  font-family: "Montserrat", sans-serif;
+  font-size: 300%;
   position: relative;
   color: #f9f9f9;
   z-index: 1;
   text-align: left;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hero-content .big {
@@ -162,13 +168,15 @@ nav ul li a:hover {
 }
 
 .hero-content p {
-  font-size: 150%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 130%;
   color: #ffffff;
   font-weight: 500;
   z-index: 2;
   text-shadow: 2px 2px 5px rgba(73, 77, 134, 0.5);
   text-align: left;
   font-weight: 200;
+
 }
 
 .hero-content .glow-hero-text {
@@ -222,32 +230,6 @@ nav ul li a:hover {
 
 
 
-
-.resume-button {
-  display: inline-block;
-  background-color: transparent;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  transition: border-color 0.3s;
-  animation: glow 1.5s ease-in-out infinite alternate;
-  border-radius: 25px;
-  margin-right: 50%;
-
-}
-
-.resume-button:hover {
-  border-color: rgba(3, 238, 221, 255);
-  font-weight: 500;
-  color: black;
-
-}
-
-.resume-button:hover {
-  background-color: rgba(3, 238, 221, 255);
-}
 
 /* about */
 
@@ -381,6 +363,66 @@ nav ul li a:hover {
   /* Apply animation */
 }
 
+.resume{
+  padding-top: 4%;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: rgba(0, 0, 0, 0.247);
+  background-size: 400%;
+  color: #d3f1f8;
+  font-weight: 300;
+  font-size: 90%;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  transform: scaleY(1);
+
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(0, 47, 187) 10.8%,
+    rgb(1, 121, 115) 94.3%
+  );
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  outline: none; /* Ensure no outline on button */
+}
+
+.button:focus {
+  outline: none; /* Remove focus outline */
+}
+.button:active {
+  scale: 0.9;
+
+}
+
+
+
 /* project */
 
 .projects {
@@ -445,8 +487,8 @@ nav ul li a:hover {
 
 .project-content .title{
   text-align: left;
-  padding: 0% 5%;
-  font-size: large;
+  padding: 2% 5% 0%;
+  font-size: 150%;
 
 }
 
@@ -519,7 +561,7 @@ nav ul li a:hover {
 .project .tools {
   display: flex;
   justify-content: space-between;
-  padding: 3%;
+  padding: 1% 3% 2%;
 
 }
 
@@ -860,6 +902,33 @@ footer p {
   }
 }
 
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: 100%;
+    /* Stacks projects vertically on smaller screens */
+  }
+
+  .hero-text {
+    width: 100%;
+    font-size: 70%;
+    /* Full width for projects on mobile */
+   
+  }
+  
+  .bg-image:nth-child(3) {
+    top: 0%;
+    left: 0%;
+  }
+  
+  .bg-image:nth-child(2) {
+    top: 50%;
+    left: 80%;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 14px; /* Decrease font size for mobile devices */
@@ -883,6 +952,10 @@ footer p {
   /* Adjust other elements as needed */
   .project .overlay,
   .project .text {
-    font-size: 0.8em;
+    font-size: 0.9em;
+  }
+
+  .skill img {
+    width: 100%;
   }
 }
