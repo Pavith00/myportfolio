@@ -958,4 +958,12 @@ footer p {
   .skill img {
     width: 100%;
   }
+
+  .hero-content .glow-hero-text {
+
+    background: linear-gradient(to right, rgb(97, 244, 255), rgb(143, 255, 249));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
 }
