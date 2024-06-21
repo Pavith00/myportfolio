@@ -79,7 +79,7 @@ nav ul li a:hover {
   color: #2debeb !important;
 }
 
-/*Hero section*/
+
 /* Hero section */
 .hero {
   background-color: rgba(0, 0, 0, 0.103);
@@ -174,7 +174,7 @@ nav ul li a:hover {
 .hero-content .glow-hero-text {
   margin-bottom: 2%;
   position: relative;
-  background: linear-gradient(to right, rgb(6, 100, 163), rgb(3, 250, 250));
+  background: linear-gradient(to right, rgb(71, 129, 255), rgb(0, 255, 242));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
@@ -183,17 +183,18 @@ nav ul li a:hover {
 
 .bg-image {
   position: absolute;
-  max-width: 2%;
+  max-width: 50%;
   pointer-events: none;
   transition: transform 3s ease, filter 0.3s ease-in-out;
   z-index: -1;
+  opacity: 0.4;
 }
 
 .glow-image {
   display: inline-block;
   filter: drop-shadow(0 0 10px rgb(73, 119, 121));
   transition: filter 0.3s ease-in-out;
-  opacity: 0.3;
+
 }
 
 @media (max-width: 768px) {
@@ -208,65 +209,18 @@ nav ul li a:hover {
   }
 }
 
-.bg-image:nth-child(1) {
+
+.bg-image:nth-child(3) {
   top: 0%;
-  left: 10%;
+  left: -35%;
 }
 
 .bg-image:nth-child(2) {
-  top: 35%;
-  left: 75%;
-}
-
-.bg-image:nth-child(3) {
-  top: 20%;
-  left: 20%;
-}
-
-.bg-image:nth-child(4) {
-  top: 0%;
+  top: -50%;
   left: 80%;
 }
 
-.bg-image:nth-child(5) {
-  top: 5%;
-  left: 40%;
-}
 
-.bg-image:nth-child(6) {
-  top: 60%;
-  left: 0%;
-}
-
-.bg-image:nth-child(7) {
-  top: 50%;
-  left: 50%;
-}
-
-.bg-image:nth-child(8) {
-  top: 60%;
-  left: 70%;
-}
-
-.bg-image:nth-child(9) {
-  top: 40%;
-  left: 115%;
-}
-
-.bg-image:nth-child(10) {
-  top: 90%;
-  left: 3%;
-}
-
-.bg-image:nth-child(11) {
-  top: -3%;
-  left: 90%;
-}
-
-.bg-image:nth-child(12) {
-  top: 40%;
-  left: 15%;
-}
 
 
 .resume-button {
@@ -390,9 +344,7 @@ nav ul li a:hover {
     font-size: 1.2em; /* Adjust as needed */
   }
 
-  .about-me h1 {
-    font-size: 1.5em; /* Adjust as needed */
-  }
+
 }
 
 /*topics*/
@@ -494,6 +446,7 @@ nav ul li a:hover {
 .project-content .title{
   text-align: left;
   padding: 0% 5%;
+  font-size: large;
 
 }
 
@@ -916,7 +869,7 @@ footer p {
 /* If you need to adjust specific text elements */
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.5em; /* Adjust heading sizes */
+    font-size: 2em; /* Adjust heading sizes */
   }
   
   h2 {

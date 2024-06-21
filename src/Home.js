@@ -5,7 +5,7 @@ import java from './img/AI.png';
 import git from './img/tool.png';
 import Sinhala from './img/sinhala.jpg';
 import stock from './img/stock.jpg';
-import game from './img/2d.png';
+import game from './img/2d.jpg';
 import cleaning from './img/cleaning.jpg';
 import courier from './img/courier.jpg';
 import internship from './img/internship.jpg';
@@ -46,12 +46,17 @@ function Home() {
 
         const updatePositions = () => {
             bgImages.forEach((image, index) => {
-                const speed = (index + 1) * 0.2;
+                const speed = (index + 1) * 0.4;
+
+                // Adjusting movement direction based on index
+                const directionX = index % 2 === 0 ? 1 : -1;
+                const directionY = index % 2 === 0 ? -1 : 1;
+
                 const currentTransform = image.style.transform.match(/translate\(([^)]+)\)/);
                 const [currentX, currentY] = currentTransform ? currentTransform[1].split(',').map(parseFloat) : [0, 0];
 
-                const targetX = mouseX * speed * 100;
-                const targetY = mouseY * speed * 100;
+                const targetX = mouseX * speed * 100 * directionX;
+                const targetY = mouseY * speed * 100 * directionY;
 
                 const newX = currentX + (targetX - currentX) * inertiaFactor;
                 const newY = currentY + (targetY - currentY) * inertiaFactor;
@@ -74,7 +79,6 @@ function Home() {
             cancelAnimationFrame(requestId);
         };
     }, []);
-
 
 
     useEffect(() => {
@@ -208,26 +212,18 @@ function Home() {
                                         <span className="big fade-line glow-hero-text">Ramanayake</span>
                                     </div>
                                 </h1>
-                                <p className="fade-line">I'm the Unknown Developer.</p>
+                                <p className="fade-line">I'm a Computer Science Undergraduate.</p>
+
                             </div>
                             <div className="col-lg-6 col-md-12 hero-image" ref={heroImageRef}>
                                 <img src={heroImage} alt="Your Image" />
+
                             </div>
                         </div>
                         {/* Background images */}
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1wYaYl12mZMqT_BTHSWvixUZlGiyMpPrCtw&s" alt="" className="bg-image glow-image" />
-                        <img src="https://static-00.iconduck.com/assets.00/react-icon-2048x1822-j20tyq26.png" alt="" className="bg-image glow-image" />
-                        <img src="https://conscensia.com/wp-content/uploads/2021/01/hvid_icons8-c-250-1.png" alt="" className="bg-image glow-image" />
-                        <img src="https://icons.veryicon.com/png/o/business/2022-alibaba-cloud-product-icon-developer/nodejs-node-js-performance-platform.png" alt="" className="bg-image glow-image" />
-                        <img src="https://images.ctfassets.net/un655fb9wln6/appIcon-mongodb/4317b9eaa0953421e89d8aff5c79e921/mongodb.png" alt="" className="bg-image glow-image" />
-                        <img src="https://code.visualstudio.com/assets/images/code-stable-white.png" alt="" className="bg-image glow-image" />
-                        <img src="https://godotengine.org/assets/press/icon_monochrome_dark.png" alt="" className="bg-image glow-image" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Git-icon-white.svg/2048px-Git-icon-white.svg.png" alt="" className="bg-image glow-image" />
-                        <img src="https://pngimg.com/d/github_PNG63.png" alt="" className="bg-image glow-image" />
-                        <img src="https://pngimg.com/d/github_PNG63.png" alt="" className="bg-image glow-image" />
-                        <img src="https://www.tensorflow.org/static/site-assets/images/marketing/icon/icon-all-tensorflow-white.png" alt="" className="bg-image glow-image" />
-                        <img src="https://static-00.iconduck.com/assets.00/react-icon-2048x1822-j20tyq26.png" alt="" className="bg-image glow-image" />
-                        
+                        <img src="https://www.eskimoz.co.uk/wp-content/uploads/2022/08/video-corporate-un-outil-de-communication-aux-multiples-facettes-la-video-corporate-un-contenu-complexe-a-realiser-1120x1075.png" alt="" className="bg-image fade-line glow-image " />
+                        <img src="https://www.eskimoz.co.uk/wp-content/uploads/2022/08/video-corporate-un-outil-de-communication-aux-multiples-facettes-la-video-corporate-un-contenu-complexe-a-realiser-1120x1075.png" alt="" className="bg-image fade-line glow-image " />
+
                     </div>
                 </section>
 
@@ -326,21 +322,21 @@ function Home() {
                                     <div className="project-content">
 
                                         <div className="hover-image-container">
-                                            <img src={internship} alt="Hover" className="image" />
+                                            <img src={cleaning} alt="Hover" className="image" />
                                             <div className="overlay">
                                                 <div className="text">
-                                                    <h2>University InternshipHub</h2>
+                                                    <h2>Brightcleen Cleaning Services Website</h2>
                                                     <p>
-                                                        Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
+                                                    This website is a group effort created for a fictional cleaning service company called Brightcleen. As beginners in web development, we aimed to keep the project simple yet effective, focusing on learning and implementing fundamental HTML, CSS, and JavaScript concepts.
                                                     </p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className='title'>gdhdhg</p>
+                                        <p className='title'>Web Project</p>
                                         <div className="tools">
-                                            <img src="https://skillicons.dev/icons?i=idea,react,bootstrap,mongodb" alt="Tools" />
-                                            <a href="https://github.com/Pavith00/campus-internship-hub.git" target="_blank" rel="noopener noreferrer">
+                                            <img src="https://skillicons.dev/icons?i=html,js,css,php" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/cleaning_servicee_website.git" target="_blank" rel="noopener noreferrer">
                                                 <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
                                             </a>
                                         </div>
@@ -360,13 +356,13 @@ function Home() {
                                                 <div className="text">
                                                     <h2>University InternshipHub</h2>
                                                     <p>
-                                                        Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
+                                                        This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
                                                     </p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className='title'>gdhdhg</p>
+                                        <p className='title'>Web Project</p>
                                         <div className="tools">
                                             <img src="https://skillicons.dev/icons?i=idea,react,bootstrap,mongodb" alt="Tools" />
                                             <a href="https://github.com/Pavith00/campus-internship-hub.git" target="_blank" rel="noopener noreferrer">
@@ -387,21 +383,20 @@ function Home() {
                                     <div className="project-content">
 
                                         <div className="hover-image-container">
-                                            <img src={internship} alt="Hover" className="image" />
+                                            <img src={courier} alt="Hover" className="image" />
                                             <div className="overlay">
                                                 <div className="text">
-                                                    <h2>University InternshipHub</h2>
+                                                    <h2>Courier-Management-System</h2>
                                                     <p>
-                                                        Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
-                                                    </p>
+                                                    This Courier Management System project aims to streamline and optimize courier operations by providing a digital platform(Desktop application) for managing shipments, tracking packages, and handling bills. The development and implementation of our courier service application in Visual Studio represents a significant step forward in streamlining and enhancing the efficiency of our courier service operations.                                                    </p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className='title'>gdhdhg</p>
+                                        <p className='title'>.Net Project</p>
                                         <div className="tools">
-                                            <img src="https://skillicons.dev/icons?i=idea,react,bootstrap,mongodb" alt="Tools" />
-                                            <a href="https://github.com/Pavith00/campus-internship-hub.git" target="_blank" rel="noopener noreferrer">
+                                            <img src="https://skillicons.dev/icons?i=vscode,cs,k,j" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/COURIER_MANAGEMENT_SYSTEM.git" target="_blank" rel="noopener noreferrer">
                                                 <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
                                             </a>
                                         </div>
@@ -416,21 +411,20 @@ function Home() {
                                     <div className="project-content">
 
                                         <div className="hover-image-container">
-                                            <img src={internship} alt="Hover" className="image" />
+                                            <img src={Sinhala} alt="Hover" className="image" />
                                             <div className="overlay">
                                                 <div className="text">
-                                                    <h2>University InternshipHub</h2>
+                                                    <h2>Sinhala character recognition system</h2>
                                                     <p>
-                                                        Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
-                                                    </p>
+                                                    This project is to create a Sinhala character recognition system using Convolutional Neural Networks (CNN).                                                    </p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className='title'>gdhdhg</p>
+                                        <p className='title'>Deep Learning</p>
                                         <div className="tools">
-                                            <img src="https://skillicons.dev/icons?i=idea,react,bootstrap,mongodb" alt="Tools" />
-                                            <a href="https://github.com/Pavith00/campus-internship-hub.git" target="_blank" rel="noopener noreferrer">
+                                        <img src="https://skillicons.dev/icons?i=py,tensorflow,bootfstrap,mondgodb" alt="Tools" />
+                                        <a href="https://github.com/Pavith00/Sinhala-character-recognition-system.git" target="_blank" rel="noopener noreferrer">
                                                 <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
                                             </a>
                                         </div>
@@ -447,10 +441,10 @@ function Home() {
                                     <div className="project-content">
 
                                         <div className="hover-image-container">
-                                            <img src={internship} alt="Hover" className="image" />
+                                            <img src={stock} alt="Hover" className="image" />
                                             <div className="overlay">
                                                 <div className="text">
-                                                    <h2>University InternshipHub</h2>
+                                                    <h2>Stock price prediction system</h2>
                                                     <p>
                                                         Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
                                                     </p>
@@ -458,10 +452,10 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className='title'>gdhdhg</p>
+                                        <p className='title'>Deep Learning</p>
                                         <div className="tools">
-                                            <img src="https://skillicons.dev/icons?i=idea,react,bootstrap,mongodb" alt="Tools" />
-                                            <a href="https://github.com/Pavith00/campus-internship-hub.git" target="_blank" rel="noopener noreferrer">
+                                            <img src="https://skillicons.dev/icons?i=py,tensorflow,bootfstrap,mondgodb" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/Stock-price-prediction-system.git" target="_blank" rel="noopener noreferrer">
                                                 <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
                                             </a>
                                         </div>
@@ -476,21 +470,20 @@ function Home() {
                                     <div className="project-content">
 
                                         <div className="hover-image-container">
-                                            <img src={internship} alt="Hover" className="image" />
+                                            <img src={game} alt="Hover" className="image" />
                                             <div className="overlay">
                                                 <div className="text">
-                                                    <h2>University InternshipHub</h2>
+                                                    <h2>2D Game</h2>
                                                     <p>
-                                                        Streamline your campus internship placement process with University InternshipHub. This intuitive platform connects students, companies, and administrators, featuring profile creation, job search automation, skill-enhancing quizzes, and mentor videos. Built with React, Spring Boot, and MongoDB
-                                                    </p>
+                                                    Strawberry Quest is a simple 2D platformer game created using the Godot game engine. The objective of the game is for the player to navigate through the level, collect strawberries to increase their score, and reach the trophy to complete the level. I made this project to learn how to use GDScript in Godot for making 2D platform games.  </p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className='title'>gdhdhg</p>
+                                        <p className='title'>Gaming Project</p>
                                         <div className="tools">
-                                            <img src="https://skillicons.dev/icons?i=idea,react,bootstrap,mongodb" alt="Tools" />
-                                            <a href="https://github.com/Pavith00/campus-internship-hub.git" target="_blank" rel="noopener noreferrer">
+                                            <img src="https://skillicons.dev/icons?i=godot,reafct,booftstrap,mongfodb" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/2dGame.git" target="_blank" rel="noopener noreferrer">
                                                 <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
                                             </a>
                                         </div>
@@ -509,7 +502,7 @@ function Home() {
                     <h1 className="fade-up">Contact Me</h1>
                     <div className="contact-content">
                         <div className="contact-details">
-                            <div className="container">
+                            <div className="container " ref={(el) => (sectionRefs.current[7] = el)}>
                                 <ul className="list-unstyled list-inline">
                                     <li className="list-inline-item">
                                         <a href="mailto:rmpramanayake@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="icon-lg" /></a>
