@@ -963,7 +963,7 @@ footer p {
 
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 255, 234));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 
   }
 }
