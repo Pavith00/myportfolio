@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 
 body {
   margin: 0;
@@ -522,13 +523,18 @@ nav ul li a:hover {
   align-items: flex-end;
   justify-content: center;
   padding: 3%;
-  background: linear-gradient(to bottom, rgb(81, 255, 243), transparent), url();
-  color: rgb(2, 37, 35);
-  font-weight: 500;
+  background: linear-gradient(to bottom, rgb(8, 62, 70), transparent), url();
+  color: rgb(253, 253, 253);
+  font-weight: 300;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
   border-radius: 10px;
+}
+
+.project .overlay h2{
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
 }
 
 .project .hover-image-container:hover .image {
