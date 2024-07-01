@@ -11,7 +11,7 @@ import courier from './img/courier.jpg';
 import internship from './img/internship.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import heroImage from './img/myimg.png';
 import StarField from './Component/StarField';
 
@@ -234,14 +234,14 @@ function Home() {
                         <h1 className="fade-up">About Me</h1>
                         <div className="row about-me-content">
                             <div className="col-md-6 about-me-text fade-left">
-                                <h2 style={{ color: '#1ab9b1', marginTop: '20px' }}>Who am I?</h2>
+                                <h2 style={{ color: '#13ffff', marginTop: '20px' }}>Who am I?</h2>
                                 <br />
                                 <p className="shine">
                                     I am an undergraduate at the University of Kelaniya, pursuing a BSc Honours degree in Computer Science. My academic background and projects have equipped me with a strong understanding of data structures, algorithms, software development, and machine learning. I have hands-on experience with technologies like JavaScript, React.js, Node.js, and MongoDB. I am seeking an internship to apply my skills and gain practical experience in a dynamic work environment. I am passionate about solving complex problems and creating innovative solutions, always eager to learn and grow.
                                     <center className='resume'>
                                         <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download>
                                             <button className="button">
-                                                <span className="button-content">Get Resume</span>
+                                                <span className="button-content"><FontAwesomeIcon icon={faDownload} /> Get Resume</span>
                                             </button>
                                         </a>
                                     </center>
@@ -289,10 +289,10 @@ function Home() {
                     </div>
                     <div class="skill-icons fade-up ">
                         <div class="skill shine ">
-                            <img src="https://skillicons.dev/icons?i=godot"></img>
+                            <img src="https://skillicons.dev/icons?i=git"></img>
                         </div>
                         <div class="skill shine">
-                            <img src="https://skillicons.dev/icons?i=figma"></img>
+                            <img src="https://skillicons.dev/icons?i=tensorflow"></img>
                         </div>
 
                         <div class="skill shine">
