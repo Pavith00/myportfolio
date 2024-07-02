@@ -197,12 +197,12 @@ nav ul li a:hover {
   pointer-events: none;
   transition: transform 3s ease, filter 0.3s ease-in-out;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .glow-image {
   display: inline-block;
-  filter: drop-shadow(0 0 10px rgb(73, 119, 121));
+  filter: drop-shadow(0 0 5px rgb(30, 31, 31));
   transition: filter 0.3s ease-in-out;
 
 }
@@ -412,8 +412,8 @@ nav ul li a:hover {
   border-radius: inherit;
   background: linear-gradient(
     82.3deg,
-    rgb(4, 66, 116) 10.8%,
-    rgb(13, 131, 125) 94.3%
+    rgb(163, 9, 143) 10.8%,
+    rgb(12, 155, 148) 94.3%
   );
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   outline: none; /* Ensure no outline on button */
@@ -664,7 +664,7 @@ nav ul li a:hover {
   text-decoration: none;
   text-decoration: none;
   border-radius: 41px;
-  background: #0b262779;
+  background: #014a4d79;
   box-shadow: 10px -10px 20px #0b3136b2,
     -10px 10px 20px #0e2a2c;
   margin: 15px;

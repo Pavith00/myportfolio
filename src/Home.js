@@ -222,8 +222,8 @@ function Home() {
                             </div>
                         </div>
                         {/* Background images */}
-                        <img src="https://www.eskimoz.co.uk/wp-content/uploads/2022/08/video-corporate-un-outil-de-communication-aux-multiples-facettes-la-video-corporate-un-contenu-complexe-a-realiser-1120x1075.png" alt="" className="bg-image fade-line glow-image " />
-                        <img src="https://www.eskimoz.co.uk/wp-content/uploads/2022/08/video-corporate-un-outil-de-communication-aux-multiples-facettes-la-video-corporate-un-contenu-complexe-a-realiser-1120x1075.png" alt="" className="bg-image fade-line glow-image " />
+                        <img src="https://www.sentient-portal.com/faces/javax.faces.resource/index/SH-Constellation-Lge.png?ln=img" alt="" className="bg-image fade-line glow-image " />
+                        <img src="https://www.sentient-portal.com/faces/javax.faces.resource/index/SH-Constellation-Lge.png?ln=img" alt="" className="bg-image fade-line glow-image " />
 
                     </div>
                 </section>
