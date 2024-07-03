@@ -210,6 +210,9 @@ nav ul li a:hover {
 
 }
 
+
+
+
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -296,6 +299,13 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+.glow-image-white{
+  display: inline-block;
+  transition: filter 0.3s ease-in-out;
+  filter: saturate(3) contrast(130%) drop-shadow(0 0 5px rgb(31, 108, 110));
+
+
+}
 
 /* Initial state for fade animations */
 .fade-left,

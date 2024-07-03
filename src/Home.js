@@ -249,7 +249,7 @@ function Home() {
 
                             </div>
                             <div className="col-md-6 about-me-image fade-right">
-                                <img src={aboutImage} alt="Profile Picture" className="img-fluid" />
+                                <img src={aboutImage} alt="Profile Picture" className="img-fluid glow-image-white" />
                             </div>
                         </div>
                     </div>
