@@ -320,6 +320,7 @@ function Home() {
 
 
                 <section className="projects" ref={projectsSection} id="projects">
+                    
                     <h2 className="section-title fade-up">Projects
                         <div id="line_l" className="line"></div>
                     </h2>
@@ -329,8 +330,10 @@ function Home() {
                             <div className="project">
                                 <section ref={(el) => (sectionRefs.current[1] = el)} className="project-section">
                                     <div className="project-content">
+                                        
 
                                         <div className="hover-image-container">
+                                            
                                             <img src={cleaning} alt="Hover" className="image" />
                                             <div className="overlay">
                                                 <div className="text">
