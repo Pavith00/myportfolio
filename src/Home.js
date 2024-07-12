@@ -234,7 +234,7 @@ function Home() {
                         <h1 className="fade-up">About Me</h1>
                         <div className="row about-me-content">
                             <div className="col-md-6 about-me-text fade-left">
-                                <h2 style={{ color: '#13ffff', marginTop: '20px' }}>Who am I?</h2>
+                                <h2 style={{ color: '#8686ec', marginTop: '20px' }}>Who am I?</h2>
                                 <br />
                                 <p className="shine">
                                     I am an undergraduate at the University of Kelaniya, pursuing a BSc Honours degree in Computer Science. My academic background and projects have equipped me with a strong understanding of data structures, algorithms, software development, and machine learning. I have hands-on experience with technologies like JavaScript, React.js, Node.js, and MongoDB. I am seeking an internship to apply my skills and gain practical experience in a dynamic work environment. I am passionate about solving complex problems and creating innovative solutions, always eager to learn and grow.

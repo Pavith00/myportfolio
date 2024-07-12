@@ -15,9 +15,8 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #002227;
-  background-image: radial-gradient(circle at 52.1% -29.6%,   #00444F, #004c58ec, #00444F,#00373f, #012930, #002227,#001c20);
-  background-attachment: fixed;
+  background-color: #000000;
+  background-image: radial-gradient(circle at 52.1% -29.6%,   #7A7ADB, #414172, #2a2a47,#1d1d33, #18182b, #10101d,#0e0e1a);  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -77,7 +76,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  
 }
 
 nav ul li a:hover {
@@ -282,8 +281,8 @@ nav ul li a:hover {
   font-family: "Montserrat", sans-serif;
   font-size:90%;
   line-height: 170%;
-  background: linear-gradient(#053235d3, #052122ef) padding-box,
-    linear-gradient(145deg, transparent 35%, #1cffff, #372db6) border-box;
+  background: linear-gradient(#141422, #131322d5) padding-box,
+    linear-gradient(145deg, transparent 35%, #7A7ADB, #060157) border-box;
   border: 2px solid transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -302,8 +301,7 @@ nav ul li a:hover {
 .glow-image-white{
   display: inline-block;
   transition: filter 0.3s ease-in-out;
-  filter: saturate(3) contrast(130%) drop-shadow(0 0 5px rgb(31, 108, 110));
-
+  filter: saturate(2) hue-rotate(90deg) contrast(130%) drop-shadow(0 0 5px rgb(52, 53, 88));
 
 }
 
@@ -497,8 +495,8 @@ nav ul li a:hover {
   margin: 3%;
   width: calc(50% - 15px);
   padding:1%;
-  background: linear-gradient(#096969e7, #032424) padding-box,
-    linear-gradient(145deg, transparent 35%, #37ffff, #303eff) border-box;
+  background: linear-gradient(#313155e1, #11111d) padding-box,
+    linear-gradient(145deg, transparent 35%, #9898e7, #313152) border-box;
   border: 2px solid transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -510,7 +508,7 @@ nav ul li a:hover {
   text-align: left;
   padding: 1% 5% 0%;
   font-size: 170%;
-  color: #b8ffff;
+  color: #d7d7f5;
   font-weight: 300;
 
 }
@@ -545,7 +543,7 @@ nav ul li a:hover {
   align-items: flex-end;
   justify-content: center;
   padding: 3%;
-  background: linear-gradient(to bottom, rgb(12, 44, 51), transparent), url(img/stargif.gif);
+  background: linear-gradient(to bottom, #2b2b49, transparent), url(img/stargif.gif);
   color: rgb(255, 255, 255);
   font-weight: 300;
   opacity: 0;
@@ -679,17 +677,17 @@ nav ul li a:hover {
   text-decoration: none;
   text-decoration: none;
   border-radius: 41px;
-  background: #014a4d79;
-  box-shadow: 10px -10px 20px #092a2eb2,
-    -10px 10px 20px #0e2a2c;
+  background: #1c1c31;
+  box-shadow: 10px -10px 20px #16162b,
+    -10px 10px 20px #131324;
   margin: 15px;
 
 }
 
 .container ul li:hover {
-  background: #082325;
-  box-shadow: inset -10px 10px 20px #072025,
-    inset 10px -10px 20px #072025;
+  background: #151827;
+  box-shadow: inset -10px 10px 20px #101220d2,
+    inset 10px -10px 20px #121424;
   transition: background 1s;
 
 }
@@ -805,7 +803,7 @@ nav ul li a:hover {
 
 .skill:hover {
   transform: scale(1.1);
-  background-color: #5e5e5e33;
+  background-color: #4e4d6d33;
 }
 
 .skill img {
