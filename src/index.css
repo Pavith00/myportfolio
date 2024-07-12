@@ -685,9 +685,9 @@ nav ul li a:hover {
 }
 
 .container ul li:hover {
-  background: #151827;
-  box-shadow: inset -10px 10px 20px #101220d2,
-    inset 10px -10px 20px #121424;
+  background: #11131f;
+  box-shadow: inset -10px 10px 20px #0c0e16d2,
+    inset 10px -10px 20px #0e0f1b;
   transition: background 1s;
 
 }
