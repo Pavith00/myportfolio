@@ -543,14 +543,32 @@ nav ul li a:hover {
   align-items: flex-end;
   justify-content: center;
   padding: 3%;
-  background: linear-gradient(to bottom, #2b2b49, transparent), url(img/stargif.gif);
+  background: linear-gradient(to bottom, #2b2b49, transparent);
   color: rgb(255, 255, 255);
   font-weight: 300;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
   border-radius: 10px;
+  z-index: 1; /* Ensure overlay content stays above the background */
 }
+
+.project .overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding:300px 500px;
+  background: url('img/stargif.gif') no-repeat center center;
+  background-size:contain;
+  filter: hue-rotate(90deg);
+  opacity: 0.1; /* Adjust this value to make the image more or less faded */
+  z-index: -1; /* Place it behind the overlay content */
+  border-radius: 10px; /* Match the border-radius of the overlay */
+}
+
 
 .project .overlay h2{
   font-family: "Rowdies", sans-serif;
