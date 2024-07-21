@@ -47,7 +47,7 @@ function Home() {
 
         const updatePositions = () => {
             bgImages.forEach((image, index) => {
-                const speed = (index + 1) * 1;
+                const speed = (index + 1) * 0.4;
 
                 // Adjusting movement direction based on index
                 const directionX = index % 2 === 0 ? -1 : 1;
@@ -223,8 +223,8 @@ function Home() {
                             </div>
                         </div>
                         {/* Background images */}
-                        <img src="https://matthew.wagerfield.com/parallax/assets/images/light-purple.png" alt="" className="bg-image fade-line glow-image " />
-                        <img src="https://www.pngall.com/wp-content/uploads/11/Blue-Light-PNG-Picture.png" alt="" className="bg-image fade-line glow-image " />
+                        <img src={bgImg} alt="" className="bg-image fade-line glow-image " />
+                        <img src={bgImg} alt="" className="bg-image fade-line glow-image " />
 
                     </div>
                 </section>
