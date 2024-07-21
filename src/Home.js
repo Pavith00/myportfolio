@@ -5,6 +5,7 @@ import java from './img/AI.png';
 import git from './img/tool.png';
 import Sinhala from './img/sinhala.jpg';
 import stock from './img/stock.jpg';
+import bgImg from './img/bgimg.png';
 import game from './img/2d.jpg';
 import cleaning from './img/cleaning.jpg';
 import courier from './img/courier.jpg';
@@ -46,11 +47,11 @@ function Home() {
 
         const updatePositions = () => {
             bgImages.forEach((image, index) => {
-                const speed = (index + 1) * 0.4;
+                const speed = (index + 1) * 1;
 
                 // Adjusting movement direction based on index
-                const directionX = index % 2 === 0 ? 1 : -1;
-                const directionY = index % 2 === 0 ? -1 : 1;
+                const directionX = index % 2 === 0 ? -1 : 1;
+                const directionY = index % 2 === 0 ? 1 : -1;
 
                 const currentTransform = image.style.transform.match(/translate\(([^)]+)\)/);
                 const [currentX, currentY] = currentTransform ? currentTransform[1].split(',').map(parseFloat) : [0, 0];
@@ -222,8 +223,8 @@ function Home() {
                             </div>
                         </div>
                         {/* Background images */}
-                        <img src="https://www.sentient-portal.com/faces/javax.faces.resource/index/SH-Constellation-Lge.png?ln=img" alt="" className="bg-image fade-line glow-image " />
-                        <img src="https://www.sentient-portal.com/faces/javax.faces.resource/index/SH-Constellation-Lge.png?ln=img" alt="" className="bg-image fade-line glow-image " />
+                        <img src="https://matthew.wagerfield.com/parallax/assets/images/light-purple.png" alt="" className="bg-image fade-line glow-image " />
+                        <img src="https://www.pngall.com/wp-content/uploads/11/Blue-Light-PNG-Picture.png" alt="" className="bg-image fade-line glow-image " />
 
                     </div>
                 </section>

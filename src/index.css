@@ -196,17 +196,17 @@ nav ul li a:hover {
 
 .bg-image {
   position: absolute;
-  max-width: 50%;
+  width: 50%;
   pointer-events: none;
-  transition: transform 3s ease, filter 0.3s ease-in-out;
+  transition: transform 3s ease, filter 0.2s ease-in-out;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.4;
   
 }
 
 .glow-image {
   display: inline-block;
-  filter: drop-shadow(0 0 5px rgb(30, 31, 31));
+  filter: drop-shadow(0 0 25px rgb(0, 0, 0));
   transition: filter 0.3s ease-in-out;
 
 }
@@ -228,13 +228,13 @@ nav ul li a:hover {
 
 
 .bg-image:nth-child(3) {
-  top: -10%;
-  left: -35%;
+  top: 2%;
+  left: -42%;
 }
 
 .bg-image:nth-child(2) {
   top: -50%;
-  left: 80%;
+  left: 83%;
 }
 
 
@@ -950,6 +950,8 @@ footer p {
     /* Full width for projects on mobile */
   }
 }
+
+
 
 
 
