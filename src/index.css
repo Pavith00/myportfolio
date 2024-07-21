@@ -563,7 +563,7 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  padding:300px 500px;
+  padding:60% 70%;
   background: url('img/stargif.gif') no-repeat center center;
   background-size:contain;
   filter: hue-rotate(90deg);
