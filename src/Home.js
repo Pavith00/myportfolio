@@ -15,7 +15,7 @@ import furniture from './img/furniture.jpg'
 import internship from './img/internship.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faDownload, faEnvelope, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
 import heroImage from './img/myimg.png';
 import StarField from './Component/StarField';
 
@@ -589,7 +589,7 @@ function Home() {
                                         <div className="tools">
                                             <img src="https://skillicons.dev/icons?i=figma,expcress,recact,pcy" alt="Tools" />
                                             <a href="https://www.figma.com/community/file/1394510472565467056" target="_blank" rel="noopener noreferrer">
-                                                <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
+                                                <FontAwesomeIcon icon={faGlobe}  style={{ color: 'white', marginTop: '10px',fontSize:'24px' }} />
                                             </a>
                                         </div>
 
