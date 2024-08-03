@@ -7,8 +7,11 @@ import Sinhala from './img/sinhala.jpg';
 import stock from './img/stock.jpg';
 import bgImg from './img/bgimg.png';
 import game from './img/2d.jpg';
+import recipe from './img/recipie.jpg';
+import cloth from './img/cloth.jpg';
 import cleaning from './img/cleaning.jpg';
 import courier from './img/courier.jpg';
+import furniture from './img/furniture.jpg'
 import internship from './img/internship.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -504,6 +507,97 @@ function Home() {
                                 </section>
                             </div>
                         </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="project">
+                                <section ref={(el) => (sectionRefs.current[8] = el)} className="project-section">
+                                    <div className="project-content">
+
+                                        <div className="hover-image-container">
+                                            <img src={recipe} alt="Hover" className="image" />
+                                            <div className="overlay">
+                                                <div className="text">
+                                                    <h2>Recipe Sharing Website</h2>
+                                                    <p>
+                                                    The project includes implementing user authentication, recipe management, and interactive features to facilitate community engagement and culinary creativity. Additionally, there is a machine learning component that suggests suitable recipes based on the ingredients entered by the users.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p className='title'>Web Project</p>
+                                        <div className="tools">
+                                            <img src="https://skillicons.dev/icons?i=mongodb,express,react,py" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/RecipeSharing" target="_blank" rel="noopener noreferrer">
+                                                <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="project">
+                                <section ref={(el) => (sectionRefs.current[9] = el)} className="project-section">
+                                    <div className="project-content">
+
+                                        <div className="hover-image-container">
+                                            <img src={cloth} alt="Hover" className="image" />
+                                            <div className="overlay">
+                                                <div className="text">
+                                                    <h2>Sentiment Analysis of Women's Clothing Reviews</h2>
+                                                    <p>
+                                                    This sentiment analysis project to determine the overall sentiment of women's clothing reviews. The project involves preprocessing text data through cleaning and tokenization and applying NLP techniques to classify reviews as positive or negative.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p className='title'>Data Science Project</p>
+                                        <div className="tools">
+                                            <img src="https://skillicons.dev/icons?i=py,tensorflow,boonftstrap,monngfodb" alt="Tools" />
+                                            <a href="https://github.com/Pavith00/Data-Science-Project" target="_blank" rel="noopener noreferrer">
+                                                <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="project">
+                                <section ref={(el) => (sectionRefs.current[10] = el)} className="project-section">
+                                    <div className="project-content">
+
+                                        <div className="hover-image-container">
+                                            <img src={furniture} alt="Hover" className="image" />
+                                            <div className="overlay">
+                                                <div className="text">
+                                                    <h2>Furniture Website </h2>
+                                                    <p>
+                                                    I recently designed a Furniture website template using Figma, focusing on creating a sleek, user-friendly interface that showcases furniture pieces beautifully. This template includes intuitive navigation, modern design elements, and an aesthetically pleasing layout to enhance the online shopping experience.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p className='title'>Designing</p>
+                                        <div className="tools">
+                                            <img src="https://skillicons.dev/icons?i=figma,expcress,recact,pcy" alt="Tools" />
+                                            <a href="https://www.figma.com/community/file/1394510472565467056" target="_blank" rel="noopener noreferrer">
+                                                <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white', marginTop: '10px' }} />
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        
                     </div>
                 </section>
 
