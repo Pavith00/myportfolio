@@ -619,8 +619,8 @@ nav ul li a:hover {
 
 
 .contact-details li {
-  padding: 2%;
-  font-size: 6vw;
+  padding: 1%;
+  font-size: 5vw;
 }
 
 .contact {
@@ -666,11 +666,20 @@ nav ul li a:hover {
   color: #c7c7c7;
 }
 
+.contact .con-title{
+  font-size: 1.2em;
+  color: #c7c7c7;
+  font-weight: 400;
+  padding: 0% 20%;
+  font-family: "Recursive", sans-serif;
+  
+}
+
 .contact .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4% 0% 8% 0%;
+  padding: 1% 0% 8% 0%;
   height: 50%;
   vertical-align: center;
   align-items: center;
@@ -691,7 +700,7 @@ nav ul li a:hover {
 }
 
 .contact .container ul li {
-  width: 15%;
+  width: 12%;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
@@ -734,7 +743,7 @@ nav ul li a:hover {
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .contact-details li {
-    font-size: 7vw;
+    font-size: 5vw;
     /* Adjust font-size for smaller screens */
   }
 
@@ -742,6 +751,18 @@ nav ul li a:hover {
     gap: 10px;
     /* Adjust gap between icons for smaller screens */
   }
+  .contact .con-title{
+    font-size: 60%;
+    padding: 0% 0%;
+  }
+  
+.container ul li:hover {
+  background: #524c8d;
+  box-shadow: inset -10px 10px 20px #000000,
+    inset 10px -10px 20px #0e0f1b;
+  transition: background 1s;
+
+}
 }
 
 /* skills*/

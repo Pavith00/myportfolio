@@ -608,10 +608,11 @@ function Home() {
                     <h1 className="fade-up">Contact Me</h1>
                     <div className="contact-content">
                         <div className="contact-details">
+                        <p className="fade-up con-title">Feel free to reach out for project collaborations, inquiries, or questions. I'm excited to connect and explore opportunities together.</p>
                             <div className="container " ref={(el) => (sectionRefs.current[7] = el)}>
                                 <ul className="list-unstyled list-inline">
                                     <li className="list-inline-item">
-                                        <a href="mailto:rmpramanayake@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="icon-lg" /></a>
+                                        <a href="mailto:rmpramanayake@gmail.com"><FontAwesomeIcon icon={faEnvelope}  /></a>
                                     </li>
                                     <li className="list-inline-item">
                                         <a href="https://github.com/Pavith00"><FontAwesomeIcon icon={faGithub} className="icon-lg" /></a>
