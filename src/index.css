@@ -743,7 +743,8 @@ nav ul li a:hover {
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .contact-details li {
-    font-size: 5vw;
+    font-size: 6vw;
+    
     /* Adjust font-size for smaller screens */
   }
 
@@ -751,8 +752,11 @@ nav ul li a:hover {
     gap: 10px;
     /* Adjust gap between icons for smaller screens */
   }
+  .contact .container ul li {
+    width: 14%;
+  }
   .contact .con-title{
-    font-size: 60%;
+    font-size: 90%;
     padding: 0% 0%;
   }
   
