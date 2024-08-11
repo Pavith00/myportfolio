@@ -743,7 +743,7 @@ nav ul li a:hover {
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .contact-details li {
-    font-size: 6vw;
+    font-size: 7vw;
     
     /* Adjust font-size for smaller screens */
   }
