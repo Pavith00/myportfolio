@@ -16,15 +16,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
-  background-image: linear-gradient(to right, 
-  #011418 , /* Darkest color (start) */
-  #062b2f,
-  #093d3d, /* Darker shade */
-  #0e5353, /* Lighter middle color */
-  #093d3d,
-  #062b2f, /* Darker shade */
-  #011418  /* Darkest color (end) */
-);
+  background-image: radial-gradient(
+    circle at top,
+    #146d70, /* Light source positioned at the top */
+    #084446, /* Lighter color (top center) */
+    #062b2f 50%, /* Transition to darker shade */
+    #04161a 90% /* Darkest color at the bottom and edges */
+  );
+  
   background-attachment: fixed;
   background-size: cover;
 }
