@@ -16,7 +16,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
-  background-image: linear-gradient(to right,#111124, #121227, #181831, #1d1d3b, #28284d,  #2d2d57, #28284d, #1d1d3b, #181831, #121227, #111124);
+  background-image: linear-gradient(to right, 
+  #011418 , /* Darkest color (start) */
+  #062b2f,
+  #093d3d, /* Darker shade */
+  #0e5353, /* Lighter middle color */
+  #093d3d,
+  #062b2f, /* Darker shade */
+  #011418  /* Darkest color (end) */
+);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -200,7 +208,7 @@ nav ul li a:hover {
   pointer-events: none;
   transition: transform 3s ease, filter 0.2s ease-in-out;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.6;
   
 }
 
@@ -283,8 +291,8 @@ nav ul li a:hover {
   font-family: "Montserrat", sans-serif;
   font-size:90%;
   line-height: 170%;
-  background: linear-gradient(#141422, #131329de) padding-box,
-    linear-gradient(145deg, transparent 35%, #07b9f0, #6307cc) border-box;
+  background: linear-gradient(#021e25, #001f18de) padding-box,
+    linear-gradient(145deg, transparent 35%, #07c1f0, #79009e) border-box;
   border: 2px solid transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -303,7 +311,7 @@ nav ul li a:hover {
 .glow-image-white{
   display: inline-block;
   transition: filter 0.3s ease-in-out;
-  filter: saturate(2) hue-rotate(90deg) contrast(130%) drop-shadow(0 0 5px rgb(5, 76, 78));
+  filter: saturate(2) hue-rotate(8deg) contrast(130%) drop-shadow(0 0 5px rgb(0, 67, 78));
 
 }
 
@@ -497,8 +505,8 @@ nav ul li a:hover {
   margin: 3%;
   width: calc(50% - 15px);
   padding:1%;
-  background: linear-gradient(#20214d, #0d0d24) padding-box,
-    linear-gradient(145deg, transparent 35%, #0cd2f5, #e01fd7) border-box;
+  background: linear-gradient(#204d47, #00181b) padding-box,
+    linear-gradient(145deg, transparent 35%, #0cf5bb, #b521f0) border-box;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -546,7 +554,7 @@ nav ul li a:hover {
   align-items: flex-end;
   justify-content: center;
   padding: 3%;
-  background: linear-gradient(to bottom, #20214d, transparent);
+  background: linear-gradient(to bottom, #023b3b, transparent);
   color: rgb(255, 255, 255);
   font-weight: 300;
   opacity: 0;
@@ -707,17 +715,17 @@ nav ul li a:hover {
   text-decoration: none;
   text-decoration: none;
   border-radius: 41px;
-  background: #272750;
-  box-shadow: 10px -10px 20px #0f0f2459,
-    -10px 10px 20px #0c0c29b2;
+  background: #004d46;
+  box-shadow: 10px -10px 20px #0b272259,
+    -10px 10px 20px #0218138e;
   margin: 15px;
 
 }
 
 .container ul li:hover {
-  background: #11131f;
-  box-shadow: inset -10px 10px 20px #0c0e16d2,
-    inset 10px -10px 20px #0e0f1b;
+  background: #111f1d;
+  box-shadow: inset -10px 10px 20px #0c1615d2,
+    inset 10px -10px 20px #0e1b19;
   transition: background 1s;
 
 }
@@ -761,7 +769,7 @@ nav ul li a:hover {
   }
   
 .container ul li:hover {
-  background: #524c8d;
+  background: #4c8d77;
   box-shadow: inset -10px 10px 20px #000000,
     inset 10px -10px 20px #0e0f1b;
   transition: background 1s;
